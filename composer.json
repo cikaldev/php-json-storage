@@ -1,0 +1,36 @@
+{
+    "name": "cikal/php-json-storage",
+    "description": "Small library for doing CRUD on flat JSON file",
+    "keywords": ["json","crud","flat file"],
+    "homepage": "https://github.com/cikaldev/php-json-storage",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ian Cikal",
+            "email": "cikaldev@gmail.com",
+            "homepage": "https://cikaldev.github.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "phpunit/php-code-coverage": "~2.0",
+        "friendsofphp/php-cs-fixer": "~2.14"
+    },
+    "autoload": {
+        "psr-2": {
+            "Cikal": "src/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap ./vendor/autoload.php --testdox ./tests",
+        "testverb": "./vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./tests",
+        "testwin": ".\\vendor\\bin\\phpunit --bootstrap .\\vendor\\autoload.php --testdox .\\tests",
+        "testwinverb": ".\\vendor\\bin\\phpunit --bootstrap .\\vendor\\autoload.php .\\tests",
+        "lint": "php-cs-fixer fix --diff --dry-run",
+        "fix": "php-cs-fixer fix"
+    }
+}
