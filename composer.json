@@ -1,5 +1,5 @@
 {
-    "name": "cikal/php-json-storage",
+    "name": "cikaldev/php-json-storage",
     "description": "Small library for doing CRUD on flat JSON file",
     "keywords": ["json","crud","flat file"],
     "homepage": "https://github.com/cikaldev/php-json-storage",
